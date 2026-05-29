@@ -1,0 +1,38 @@
+2026-05-29 16:30:34 [INFO] DB Inspector tool initialized.
+2026-05-29 16:30:49 [INFO] Switched database to: C:\Users\ATSAdmin\Documents\UNO\small_prj\AMEVA-STT-Trainer\db\stt_trainer.db
+2026-05-29 16:30:49 [INFO] DB: stt_trainer.db | SQL: SELECT name FROM sqlite_master WHERE type='table' ORDER BY name; | Params: None | SUCCESS | Rows: 9
+2026-05-29 16:30:49 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(sqlite_sequence); | Params: None | SUCCESS | Rows: 2
+2026-05-29 16:30:49 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(tb_checkpoint); | Params: None | SUCCESS | Rows: 7
+2026-05-29 16:30:49 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(tb_chunk); | Params: None | SUCCESS | Rows: 5
+2026-05-29 16:30:49 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(tb_log); | Params: None | SUCCESS | Rows: 5
+2026-05-29 16:30:49 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(tb_metadata); | Params: None | SUCCESS | Rows: 5
+2026-05-29 16:30:49 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(tb_metric); | Params: None | SUCCESS | Rows: 8
+2026-05-29 16:30:49 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(tb_task); | Params: None | SUCCESS | Rows: 11
+2026-05-29 16:30:49 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(tb_task_dtl); | Params: None | SUCCESS | Rows: 7
+2026-05-29 16:30:49 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(tb_thread_log); | Params: None | SUCCESS | Rows: 4
+2026-05-29 16:30:52 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(tb_task); | Params: None | SUCCESS | Rows: 11
+2026-05-29 16:30:52 [INFO] DB: stt_trainer.db | SQL: SELECT * FROM tb_task LIMIT 1000; | Params: None | SUCCESS | Rows: 26
+2026-05-29 16:31:08 [INFO] DB: stt_trainer.db | SQL: select * FROM tb_checkpoint; | Params: None | SUCCESS | Rows: 7
+2026-05-29 16:31:10 [INFO] DB: stt_trainer.db | SQL: select * FROM tb_checkpoint; | Params: None | SUCCESS | Rows: 7
+2026-05-29 16:31:28 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(tb_task_dtl); | Params: None | SUCCESS | Rows: 7
+2026-05-29 16:31:28 [INFO] DB: stt_trainer.db | SQL: SELECT * FROM tb_task_dtl LIMIT 1000; | Params: None | SUCCESS | Rows: 42
+2026-05-29 16:31:32 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(tb_metadata); | Params: None | SUCCESS | Rows: 5
+2026-05-29 16:31:32 [INFO] DB: stt_trainer.db | SQL: SELECT * FROM tb_metadata LIMIT 1000; | Params: None | SUCCESS | Rows: 304
+2026-05-29 16:31:55 [INFO] DB: stt_trainer.db | SQL: select * FROM tb_log; | Params: None | SUCCESS | Rows: 101494
+2026-05-29 16:32:51 [INFO] DB: stt_trainer.db | SQL: select count(*) FROM tb_log; | Params: None | SUCCESS | Rows: 1
+2026-05-29 16:33:38 [INFO] DB Inspector tool initialized.
+2026-05-29 16:33:50 [INFO] Switched database to: C:\Users\ATSAdmin\Documents\UNO\small_prj\AMEVA-STT-Trainer\db\stt_trainer.db
+2026-05-29 16:33:50 [INFO] DB: stt_trainer.db | SQL: SELECT name FROM sqlite_master WHERE type='table' ORDER BY name; | Params: None | SUCCESS | Rows: 9
+2026-05-29 16:33:50 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(sqlite_sequence); | Params: None | SUCCESS | Rows: 2
+2026-05-29 16:33:50 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(tb_checkpoint); | Params: None | SUCCESS | Rows: 7
+2026-05-29 16:33:50 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(tb_chunk); | Params: None | SUCCESS | Rows: 5
+2026-05-29 16:33:50 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(tb_log); | Params: None | SUCCESS | Rows: 5
+2026-05-29 16:33:50 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(tb_metadata); | Params: None | SUCCESS | Rows: 5
+2026-05-29 16:33:50 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(tb_metric); | Params: None | SUCCESS | Rows: 8
+2026-05-29 16:33:50 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(tb_task); | Params: None | SUCCESS | Rows: 11
+2026-05-29 16:33:50 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(tb_task_dtl); | Params: None | SUCCESS | Rows: 7
+2026-05-29 16:33:50 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(tb_thread_log); | Params: None | SUCCESS | Rows: 4
+2026-05-29 16:34:00 [INFO] DB: stt_trainer.db | SQL: PRAGMA table_info(tb_task); | Params: None | SUCCESS | Rows: 11
+2026-05-29 16:34:00 [INFO] DB: stt_trainer.db | SQL: SELECT * FROM tb_task LIMIT 1000; | Params: None | SUCCESS | Rows: 26
+2026-05-29 16:34:12 [INFO] DB: stt_trainer.db | SQL: select  * from tb_task_dtl; | Params: None | SUCCESS | Rows: 42
+2026-05-29 16:34:29 [INFO] DB: stt_trainer.db | SQL: select  * from tb_task_dtl ORDER by dtl_id desc; | Params: None | SUCCESS | Rows: 42
