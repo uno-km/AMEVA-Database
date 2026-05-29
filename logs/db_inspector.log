@@ -36,3 +36,6 @@
 2026-05-29 16:34:00 [INFO] DB: stt_trainer.db | SQL: SELECT * FROM tb_task LIMIT 1000; | Params: None | SUCCESS | Rows: 26
 2026-05-29 16:34:12 [INFO] DB: stt_trainer.db | SQL: select  * from tb_task_dtl; | Params: None | SUCCESS | Rows: 42
 2026-05-29 16:34:29 [INFO] DB: stt_trainer.db | SQL: select  * from tb_task_dtl ORDER by dtl_id desc; | Params: None | SUCCESS | Rows: 42
+2026-05-29 17:10:08 [INFO] DB Inspector tool initialized.
+2026-05-29 17:10:59 [INFO ] Switched database -> C:\Users\ATSAdmin\Documents\UNO\small_prj\AMEVA-STT-Trainer\db\stt_trainer.db
+2026-05-29 17:10:59 [INFO ] DB:stt_trainer.db | SQL:"SELECT name FROM sqlite_master WHERE type='table' ORDER BY name;" | params=None | OK | rows=9 | 0.5ms

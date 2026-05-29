@@ -70,8 +70,8 @@ class SQLEditorTab(ttk.Frame):
         self._line_canvas = tk.Canvas(editor_frame, width=38, bg="#F5F5F5")
         self._line_canvas.pack(side=tk.LEFT, fill=tk.Y)
 
-        vsb = ttk.Scrollbar(editor_frame)
-        vsb.pack(side=tk.RIGHT, fill=tk.Y)
+        self._vsb = ttk.Scrollbar(editor_frame)
+        self._vsb.pack(side=tk.RIGHT, fill=tk.Y)
         hsb = ttk.Scrollbar(editor_frame, orient=tk.HORIZONTAL)
         hsb.pack(side=tk.BOTTOM, fill=tk.X)
 
@@ -86,7 +86,7 @@ class SQLEditorTab(ttk.Frame):
             tabs=("4c",),
         )
         self._editor.pack(fill=tk.BOTH, expand=True)
-        vsb.config(command=self._editor.yview)
+        self._vsb.config(command=self._on_vsb)
         hsb.config(command=self._editor.xview)
 
         # Syntax highlighting
@@ -309,6 +309,10 @@ class SQLEditorTab(ttk.Frame):
     # ------------------------------------------------------------------
 
     def _on_yscroll(self, *args) -> None:
+        self._vsb.set(*args)
+        self._update_line_numbers()
+
+    def _on_vsb(self, *args) -> None:
         self._editor.yview(*args)
         self._update_line_numbers()
 
