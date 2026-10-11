@@ -3,7 +3,7 @@
 ---
 
 ## 1. 개요 (Abstract)
-본 프로젝트는 CPU 기반 극한 엣지 디바이스 환경에서 동작하는 AMEVA 프로젝트 생태계의 비정형/정형 데이터 자원을 통합 검수 및 관리하기 위한 경량 GUI 데이터베이스 관리 파이프라인이다. AI 훈련 파이프라인, 벤치마크 슈트 등 다수의 독립 프로세스에서 동시다발적으로 파생되는 파편화된 SQLite 데이터베이스, VTT 로그, CSV 메타데이터를 단일 인터페이스에서 투명하게 추적, 분석, 보정한다.
+본 프로젝트는 CPU 기반 엣지 디바이스 환경에서 동작하는 AMEVA 프로젝트 생태계의 비정형/정형 데이터 자원을 통합 검수 및 관리하기 위한 경량 GUI 데이터베이스 관리 파이프라인이다. AI 훈련 파이프라인, 벤치마크 슈트 등 다수의 독립 프로세스에서 동시다발적으로 파생되는 파편화된 SQLite 데이터베이스, VTT 로그, CSV 메타데이터를 단일 인터페이스에서 투명하게 추적, 분석, 보정한다.
 
 특히 무거운 외부 프레임워크(PyQt/PySide 등)에 대한 의존성을 원천 배제하여 DLL 충돌 및 가상환경 파괴를 방지하였으며, DB Lock 메커니즘으로 인한 AI 학습 프로세스의 블로킹 현상을 완전히 억제하는 고정밀 Open-Execute-Close 패턴과 SQLite WAL(Write-Ahead Logging) 최적화를 융합 적용하여 MLOps 인프라의 가용성을 극대화하였다.
 
@@ -46,7 +46,7 @@ SQL 에디터 탭은 사용자의 입력 커서 위치 및 문맥을 파악하�
 - **Matplotlib Integration**: 테이블별 레코드 집계, 최근 30개 쿼리 실행 병목(Execution Timings), 워크스페이스 전역 로그 레벨 분포를 세 가지 실시간 차트로 시각화한다.
 - **Auto-Refresh Engine**: 지정된 갱신 주기(2~60초)마다 데이터 상태를 폴링하여 현장 모니터링 체계를 무인 자동화한다. 의존성 패키지 부재 시 텍스트 기반 퀵 스탯 패널로 우회(Fallback) 구동된다.
 
-### 2.7. 극한 엣지 하드웨어 최적화 (Extreme Edge Hardware Optimization)
+### 2.7. 엣지 하드웨어 최적화 (Edge Hardware Optimization)
 - **SQLite PRAGMA Injection**: 엣지 디바이스에서 AI 추론 프로세스와 DB 디스크 접근이 충돌할 때 발생하는 I/O 락(Lock) 경쟁을 해소하기 위해, WAL(Write-Ahead Logging) 저널 모드 및 64MB 메모리 맵(Memory Map I/O) 최적화 쿼리를 메뉴 기반으로 일괄 주입한다.
 
 ### 2.8. 글로벌 오딧 로깅 체계 (Global Audit Logging)
